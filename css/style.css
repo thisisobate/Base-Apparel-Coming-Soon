@@ -83,7 +83,7 @@ input[type='submit'] {
 
   .img-section {
     height: 300px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 14%;
   }
