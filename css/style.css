@@ -8,20 +8,17 @@
 }
 
 .container {
-  border: 2px solid red;
   display: flex;
 }
 
 .text-section {
   height: 100vh;
-  border: 2px solid blue;
   flex: 1.4;
   background-image: url('../images/bg-pattern-desktop.svg');
   background-size: cover;
 }
 
 .img-section {
-  border: 2px solid orange;
   height: 100vh;
   flex: 1;
   background-image: url('../images/hero-desktop.jpg');
@@ -30,12 +27,12 @@
 
 .main {
   margin: 9.5% 20%;
-  border: 2px solid brown;
 }
 
 .main > p {
   line-height: 27px;
   margin: 40px 0;
+  color: #bd9d9c;
 }
 
 .push-down {
@@ -50,13 +47,15 @@
   font-weight: 200;
   font-size: 60px;
   letter-spacing: 10px;
+  color: #bd9d9c;
 }
 
 input[type='email'] {
   width: 80%;
   padding: 15px;
   border-radius: 30px;
-  border: 1px solid #000000;
+  border: 1px solid #ede2e5;
+  color: #bd9d9c;
 }
 
 input[type='submit'] {
@@ -71,5 +70,35 @@ input[type='submit'] {
 .attribution {
   visibility: hidden;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  .logo {
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+  }
+
+  .img-section {
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    top: 14%;
+  }
+
+  .push-down {
+    margin-top: 400px;
+    font-size: 40px;
+  }
+
+  .index-text {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .main {
+    margin-top: 4%;
+  }
 }
